@@ -39,9 +39,6 @@ def LoadImage():
         image_load_successful = False
 
     if not image_load_successful:
-        model.enableAutomaticCalculation(True)
-        model.removeActionLock()
-        model.unlockControllers()
         return None
 
     active_sheet.getCellByPosition(0, 0).String = ""
