@@ -58,8 +58,8 @@ def LoadImage():
         for x in range(out_w):
             active_sheet.getCellByPosition(x, y).CellBackColor = _rgb(*out.getpixel((x, y)))
 
-    model.enableAutomaticCalculation(True)
     model.removeActionLock()
     model.unlockControllers()
+    model.enableAutomaticCalculation(True)
 
     return None
